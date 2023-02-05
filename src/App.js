@@ -1,7 +1,8 @@
+import Header from './components/header/Header';
 function App() {
    return (
       <div>
-         <h2 className="title">Hello World, It's Valorant Guide 🫡</h2>
+         <Header />
       </div>
    );
 }

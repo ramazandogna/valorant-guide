@@ -1,0 +1,27 @@
+.header {
+   @apply absolute w-[86vw] rounded-full top-4
+   mb-5 mt-2 left-[7vw]
+   border-2 border-white
+   bg-white;
+}
+
+.navbar {
+   @apply flex justify-between p-1 items-center;
+}
+
+.logo {
+   @apply p-2 
+   text-4xl text-valoFirst-500 ml-2;
+}
+
+.listItem {
+   @apply p-2 mr-2
+   text-valoFirst-500;
+}
+
+.listItem:hover {
+   @apply bg-valoFirst-500 
+   text-white
+   rounded-3xl
+   ease-in-out duration-300;
+}
