@@ -1,0 +1,31 @@
+.container {
+   @apply flex justify-center;
+}
+
+.card {
+   @apply relative mx-4 rounded-xl text-center border w-[20%] bg-white;
+}
+
+.agentTitle {
+   @apply mb-1 underline;
+}
+
+.agentDesc {
+   @apply mb-2  font-thin text-[0.9rem];
+}
+
+.agentRole {
+   @apply py-2 px-3 my-2 text-sm inline-block mx-auto bg-valoFirst-500 text-white rounded-xl items-center;
+}
+
+.agentSkills {
+   @apply flex justify-center items-center;
+}
+
+.agentSkill {
+   @apply py-1 px-2 my-2 ml-1 inline-block justify-center 
+   border 
+   rounded-xl
+   bg-valoSecond-500
+   text-xs text-white;
+}

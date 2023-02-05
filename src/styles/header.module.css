@@ -1,7 +1,7 @@
 .header {
-   @apply absolute w-[86vw] rounded-full top-4
-   mb-5 mt-2 left-[7vw]
-   border-2 border-white
+   @apply relative w-[86vw] rounded-lg h-16
+   mb-5 mt-5 left-[7vw]
+   border
    bg-white;
 }
 

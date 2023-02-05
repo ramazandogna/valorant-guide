@@ -7,11 +7,10 @@ function Header() {
          <div className={styles.navbar}>
             <div className={styles.logo}>LOGO</div>
             <ul>
-               <li className={styles.listItem}>Item 1</li>
-               <li className={styles.listItem}>Item 2</li>
-               <li className={styles.listItem}>Item 3</li>
-               <li className={styles.listItem}>Item 4</li>
-               <li className={styles.listItem}>Item 5</li>
+               <li className={styles.listItem}>Agents</li>
+               <li className={styles.listItem}>Maps</li>
+               <li className={styles.listItem}>Items</li>
+               <li className={styles.listItem}>Roles</li>
             </ul>
          </div>
       </header>

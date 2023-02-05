@@ -1,19 +1,25 @@
-import { createContext, useState, useEffect, useState } from 'react';
+import { createContext, useState } from 'react';
 
 import React from 'react';
+import axios from 'axios';
 
 const AppLevelContext = createContext();
 const API = 'https://valorant-api.com/v1';
 
-const [agents, setAgents] = useState([]);
-const [maps, setMaps] = useState([]);
-const [weapons, setWeapons] = useState([]);
-
-const fetchAgent = 
-
 export const AppLevelProvider = ({ children }) => {
+   const [agents, setAgents] = useState([]);
+   const [maps, setMaps] = useState([]);
+   const [weapons, setWeapons] = useState([]);
+
+   const fetchAgents = async () => {
+      const response = await axios.get(`${API}/agents`);
+      setAgents(response.data.data);
+   };
+
    return (
-      <AppLevelContext.Provider value={{}}>{children}</AppLevelContext.Provider>
+      <AppLevelContext.Provider value={{ agents, fetchAgents }}>
+         {children}
+      </AppLevelContext.Provider>
    );
 };
 
