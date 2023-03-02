@@ -1,0 +1,13 @@
+.main {
+   @apply flex;
+}
+.h2 {
+   @apply text-center p-8 text-3xl font-thin text-white inline-block mx-auto rounded-full 
+   hover:-translate-y-1 hover:scale-110 duration-200
+    hover:shadow-md;
+   line-height: 2;
+}
+
+.name {
+   @apply text-valoSecond-500  border-b-transparent hover:border-b-valoSecond-500 text-4xl;
+}
