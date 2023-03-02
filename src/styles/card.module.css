@@ -3,7 +3,7 @@
 }
 
 .card {
-   @apply relative mx-4 rounded-xl text-center border w-[20%] bg-white;
+   @apply relative mx-4 rounded-md text-center  w-[20%] bg-white;
 }
 
 .agentTitle {
